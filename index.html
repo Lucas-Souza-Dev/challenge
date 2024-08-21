@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+        </div>
+    </header>
+    <main>
+        <section>
+            <textarea class="__text-area" placeholder="Digite seu texto" rows="4" cols="41"></textarea>
+
+            <div class="__icon-warning">
+                <img  class="__icon" src="assets/aviso-icone.png" alt="icone de alerta para instruções">
+                <h6 class="__instruction">Apenas letras minusculas e sem assento.</h6>
+            </div>
+            <div class="__buttons">
+                <button class="__button-encrypt" onclick="btnEncrypt()">Criptografar</button>
+                <button class="__button-descrypt" onclick="btnDescrypt()">Descriptografar</button>
+            </div>
+            
+        </section>
+
+        <section>
+                <div class="container">
+                    <textarea class="__message" rows="10" cols="20"></textarea>
+                    <button class="__button-copy" onclick="copyText()">Copiar</button>
+                </div>          
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/Lucas-Souza-Dev">Lucas Pereira</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
